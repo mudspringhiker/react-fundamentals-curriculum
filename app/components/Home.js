@@ -1,11 +1,11 @@
 import React from "react";
-import Background from "../images/pattern.svg";
+import SVG from "react-inlinesvg";
 
 class Home extends React.Component {
   render() {
     return (
       <div className="home-container">
-        <Background />
+        <SVG src="app/images/pattern.svg" />
         <div className="home-title">
           <h1>A Weather App</h1>
           <div className="form">
