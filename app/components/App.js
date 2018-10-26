@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./Nav";
+import Header from "./Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./Home";
@@ -9,7 +9,7 @@ export default class App extends React.Component {
     return (
       <Router>
         <div className="container">
-          <Nav />
+          <Header />
           <Switch>
             <Route exact path="/" component={Home} />
           </Switch>

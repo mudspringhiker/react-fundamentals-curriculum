@@ -1,5 +1,6 @@
 import React from "react";
 import SVG from "react-inlinesvg";
+import Form from "./Form";
 
 class Home extends React.Component {
   render() {
@@ -7,17 +8,12 @@ class Home extends React.Component {
       <div className="home-container">
         <SVG src="app/images/pattern.svg" />
         <div className="home-title">
-          <h1>A Weather App</h1>
           <div className="form">
-            <form className="column">
-              <label className="header" htmlFor="citystate">
+            <Form vertical={true}>
+              <label className="label" htmlFor="citystate">
                 Enter a City and State
               </label>
-              <input type="text" placeholder="Cedar Park, TX" id="city-state" />
-              <button className="button" type="submit">
-                Get Weather
-              </button>
-            </form>
+            </Form>
           </div>
         </div>
       </div>
